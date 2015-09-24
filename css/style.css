@@ -18,4 +18,8 @@ body {
 
 .letter {
   display: inline-block;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 8rem;
+  color: #152142;
 }
