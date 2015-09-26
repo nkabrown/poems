@@ -11,5 +11,6 @@ my research path:
 + good html/css style
 + abstract and strict equality comparisons in javascript
 + css length values
++ html custom data attributes
 + paper prototyping
 ```

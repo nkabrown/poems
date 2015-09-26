@@ -1,0 +1,22 @@
+project & learning notes
+
+My first step was to reference the Google HTML/CSS style guide to glean some
+improvements and standards I can adopt in my daily practice. Omit optional html
+tags, omit type attributes, and omit protocol in certain embedded resources.
+
+How do I know which CSS length unit to use? If the output environment is likely
+to change then relative, not absolute, length units will better scale to new
+output environments. But how do you judge between all of the different relative
+length units? When do you choose a percentage unit instead of a length unit?
+Unclear on those issues.
+  + css rule set
+  + css dimensions
+  + css relative and absolute length units
+  + css percentage units
+
+I'm using html5 custom data attributes to provide d3 with something unique to
+select, but I haven't yet solved how to return a selection that is only the
+desired element.
+  + custom data attributes
+  + web IDL (interface definition language) - dataset IDL
+  + d3.selection.datum
