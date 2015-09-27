@@ -12,5 +12,7 @@ my research path:
 + abstract and strict equality comparisons in javascript
 + css length values
 + html custom data attributes
++ css transform property
++ d3 transitions
 + paper prototyping
 ```

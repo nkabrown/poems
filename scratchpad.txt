@@ -31,3 +31,6 @@ To rotate and adjust the letter down into proper position both the rotate and
 translateY values must be included in the same css declaration block or the
 property values will overwrite one another, see
 //stackoverflow.com/questions/16795548/rotate-and-translate.
+
+The next difficulty is how to transform a transformed element without resetting
+the computed value of the transformed element's 'transform' property?
