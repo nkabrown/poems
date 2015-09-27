@@ -19,4 +19,15 @@ select, but I haven't yet solved how to return a selection that is only the
 desired element.
   + custom data attributes
   + web IDL (interface definition language) - dataset IDL
-  + d3.selection.datum
+  + d3.selection.datum([value])
+This appears to be a bit of an unnecessary rabbit hole since I can use
+selection.filter to filter the array of bound data and return specific elements
+of the array, e.g., selection.filter(function(d) { return d == 'd'; }); to return the element
+bound to the letter 'd'. The filter method filters the selection and returns
+only the elements for which the specified selector is true.
+  +d3.selection.filter(selector)
+
+To rotate and adjust the letter down into proper position both the rotate and
+translateY values must be included in the same css declaration block or the
+property values will overwrite one another, see
+//stackoverflow.com/questions/16795548/rotate-and-translate.
