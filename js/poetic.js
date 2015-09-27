@@ -1,5 +1,5 @@
 var characters = ['d', 'e', 'm', 'o', 's'];
-var time = 9000;
+var time = 3000;
 
 var letters = d3.select('.letters').selectAll('.letter')
     .data(characters)
@@ -28,3 +28,10 @@ function moveRight(selection) {
 function moveLeft(selection) {
   selection.transition().duration(time).each('start', function() { d3.select(this).style('transform', 'translateX(0)') }).style('transform', 'translateX(-215px)');
 }
+
+setInterval(function() {
+  rotation(letterD);
+  moveRight(letterE);
+  moveRight(letterM);
+  moveLeft(letterO);
+}, 6000);
