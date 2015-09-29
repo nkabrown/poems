@@ -18,20 +18,29 @@ moveRight(letterM);
 moveLeft(letterO);
 
 function rotation(selection) {
-  selection.transition('flip').duration(time).each('start', function() { d3.select(this).style('transform', 'rotate(0deg)'); }).style('transform', 'rotate(-180deg) translateY(-25px)');
+  selection.transition('flip')
+      .duration(time)
+      .each('start', function() { d3.select(this).style('transform', 'rotate(0deg)'); })
+      .style('transform', 'rotate(-180deg) translateY(-25px)');
 }
 
 function moveRight(selection) {
-  selection.transition().duration(time).each('start', function() { d3.select(this).style('transform', 'translateX(0)') }).style('transform', 'translateX(100px)');
+  selection.transition()
+      .duration(time)
+      .each('start', function() { d3.select(this).style('transform', 'translateX(0)') })
+      .style('transform', 'translateX(100px)');
 }
 
 function moveLeft(selection) {
-  selection.transition().duration(time).each('start', function() { d3.select(this).style('transform', 'translateX(0)') }).style('transform', 'translateX(-215px)');
+  selection.transition()
+      .duration(time)
+      .each('start', function() { d3.select(this).style('transform', 'translateX(0)') })
+      .style('transform', 'translateX(-215px)');
 }
 
 setInterval(function() {
-  rotation(letterD);
-  moveRight(letterE);
-  moveRight(letterM);
-  moveLeft(letterO);
-}, 6000);
+    rotation(letterD);
+    moveRight(letterE);
+    moveRight(letterM);
+    moveLeft(letterO);
+}, 8000);
