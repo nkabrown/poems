@@ -22,9 +22,10 @@ desired element.
   + d3.selection.datum([value])
 This appears to be a bit of an unnecessary rabbit hole since I can use
 selection.filter to filter the array of bound data and return specific elements
-of the array, e.g., selection.filter(function(d) { return d == 'd'; }); to return the element
-bound to the letter 'd'. The filter method filters the selection and returns
-only the elements for which the specified selector is true.
+of the array, e.g., selection.filter(function(d) { return d == 'd'; }); to
+return the element bound to the letter 'd'. The filter method filters the
+selection and returns only the elements for which the specified selector is
+true.
   +d3.selection.filter(selector)
 
 To rotate and adjust the letter down into proper position both the rotate and
@@ -34,3 +35,13 @@ property values will overwrite one another, see
 
 The next difficulty is how to transform a transformed element without resetting
 the computed value of the transformed element's 'transform' property?
+
+'D3 also allows sequencing of complex transitions via events.'
+
+'In the DOM a CSS declaration block is a CSSStyleDeclaration object.' Trying to
+set a property on this object returned this error: 'Uncaught
+NoModificationAllowedError: Failed to execute "setProperty" on
+"CSSStyleDeclaration": These styles are computed, and therefore the "transform"
+property is read-only.'
+  + CSSStyleDeclaration interface
+  + css values processing
