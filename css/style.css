@@ -40,3 +40,49 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+/* CSS Animations */
+@keyframes flip-over {
+  0% {
+   transform: rotate(0) translateY(0);
+  }
+  20% {
+    transform: rotate(0) translateY(0);
+  }
+  80% {
+    transform: rotate(-180deg) translateY(-25px);
+  }
+  100% {
+    transform: rotate(-180deg) translateY(-25px);
+  }
+}
+
+@keyframes move-right {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(0);
+  }
+  80% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+@keyframes move-left {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(0);
+  }
+  80% {
+    transform: translateX(-215px);
+  }
+  100% {
+    transform: translateX(-215px);
+  }
+}
