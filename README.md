@@ -1,6 +1,6 @@
 #DEMOS == POEMS
 
-##a d3 animation of the rearrangement of the letters in the word 'demos' into 'poems'
+##a css animation of the rearrangement of the letters in the word 'demos' into 'poems'
 
 **How can we turn demos into poems?**
 
@@ -16,3 +16,5 @@ my research path:
 + d3 transitions
 + paper prototyping
 ```
+
+![gif of demos transforming into poems] (poems.gif)
